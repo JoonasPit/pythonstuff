@@ -1,6 +1,9 @@
-teksti = input("blaablaa"
+tiedosto = open("kirjoittaakoauuden.txt","w")
 
-if teksti == False:
-    print("Sihijuomaa!")
-else:
-	print("nakki")
+text = "Lol\nlol\nlol"
+print(text)
+
+tiedosto.write(text)
+
+tiedosto.close
+
