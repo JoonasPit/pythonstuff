@@ -1,8 +1,8 @@
-tiedosto = input("Minkä niminen tiedosto luodaan?: ")
-text = input("Mitä kirjoitetaan tiedostoon?: ")
+tiedosto = input("What will the file be named: ")
+text = input("What to write in the file: ")
 file = open(tiedosto,"w")
 file.write(text)
 file.close()
 
-print("Luotiin tiedosto ",tiedosto,"ja siihen tallennettiin teksti: ", text)
+print("Created file ",tiedosto,"and wrote: ", text)
 

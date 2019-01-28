@@ -1,8 +1,8 @@
 start = True
 
 while start:
-	print("(1) Lue muistikirjaa\n(2) Lisää merkintä\n(3) Tyhjennä muistikirja\n(4) Lopeta")
-	userselection = int(input("Mitä haluat tehdä?: "))
+	print("(1) Read notebook\n(2) Add to notebook\n(3) Empty notebook\n(4) Quit")
+	userselection = int(input("What do you wish to do? : "))
 	if userselection == 1:
 		file = open("muistio.txt","r")
 		content = file.readlines()
@@ -12,16 +12,16 @@ while start:
 		file.close()
 	elif userselection == 2:
 		file = open("muistio.txt","a")
-		addText = input("Kirjoita uusi merkintä : ")
+		addText = input("Add note: ")
 		file.write(addText)
 		file.close()	
 	elif userselection == 3:
 		file = open("muistio.txt","w")
 		file.close()
-		print("Muistio tyhjennetty.")
+		print("Notebook emptied.")
 
 	elif userselection == 4:
-		print("Lopetetaan.")
+		print("Exiting.")
 		start = False
 
 

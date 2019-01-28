@@ -1,0 +1,1 @@
+- Tällee kirjottaa et viope tulostaa nätisti siinä sen konsolissa
