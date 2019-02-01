@@ -1,1 +1,3 @@
-- Tällee kirjottaa et viope tulostaa nätisti siinä sen konsolissa
+
+-Call mum:::08:01:55 02/01/19
+Finish project for java:::08:02:10 02/01/19
