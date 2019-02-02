@@ -5,13 +5,13 @@ def testlength(userword):
 def main():
     gucci = True
     while gucci:
-        userword = input("Anna sana: ")
+        userword = input("Give me a word (end with Lopeta): ")
         if userword == "Lopeta":
             gucci = False
         elif userword =="":
             print("Et antanut syötettä")
         else:
-            print("Sana on ",testlength(userword))
+            print("The word is",testlength(userword),"characters long.")
 
 if __name__ == "__main__":
     main()

@@ -24,7 +24,7 @@ def usernamedLoop(filename):
     while stert:
         print("Käytetään muistiota", filename)
         print("(1) Lue muistikirjaa\n(2) Lisää merkintä\n(3) Tyhjennä muistikirja\n(4) Vaihda muistiota\n(5) Lopeta")
-        userselection = int(input("What do you wish to do? : "))
+        userselection = int(input("Mitä haluat tehdä? : "))
         if userselection == 1:
             file = open(filename,"r")
             content = file.readlines()
@@ -42,14 +42,15 @@ def usernamedLoop(filename):
         elif userselection == 3:
             file = open(filename,"w")
             file.close()
-            print("Notebook emptied.")
+            print("Muistio tyhjennetty.")
 
         elif userselection == 4:
             newBooknote()
-
+            stert = False
         elif userselection == 5:
             print("Lopetetaan.")
             stert = False
+            
 
 
 
@@ -63,7 +64,7 @@ def main ():
     while start:
        
         print("Käytetään muistiota: muistio.txt\n(1) Lue muistikirjaa\n(2) Lisää merkintä\n(3) Tyhjennä muistikirja\n(4) Vaihda muistiota\n(5) Lopeta")
-        userselection = int(input("What do you wish to do? : "))
+        userselection = int(input("Mitä haluat tehdä? : "))
         if userselection == 1:
             file = open("muistio.txt","r")
             content = file.readlines() 
@@ -73,7 +74,7 @@ def main ():
             file.close()
         elif userselection == 2:
             file = open("muistio.txt","a")
-            addText = "\n" +  input("Lisää merkintä: ") + ":::" + addTime()
+            addText = "\n" +  input("Kirjoita uusi: ") + ":::" + addTime()
             file.write(addText)
 
             file.close()
@@ -81,14 +82,14 @@ def main ():
         elif userselection == 3:
             file = open("muistio.txt","w")
             file.close()
-            print("Notebook emptied.")
+            print("Muistio tyhjennetty.")
 
         elif userselection == 4:
             newBooknote()
             start = False
 
         elif userselection == 5:
-            print("Lopetetaan..")
+            print("Lopetetaan.")
             start = False
 
 if __name__ == "__main__":
